@@ -12,7 +12,7 @@ humantime: "9:00 - 16:30"    # human-readable times for the workshop (e.g., "9:0
 startdate: 2019-05-20      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2019-05-21        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Marco Chiapello", "Laurent Gatto"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Axelle Loriot", "Kevin Missault"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Axelle Loriot", "Kevin Missault", "Theo Killian"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["contact-cbio@uclouvain.be"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://docs.google.com/document/d/1l4GLZXZ3a81WMmHdCbphoHwjvehckbQlPmtjyp2FoCQ/edit?usp=sharing
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -156,9 +156,8 @@ special instructions.
   Materials will be provided in advance of the workshop and
   large-print handouts are available if needed by notifying the
   organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
+  you (e.g. lactation facilities) please get in touch (using contact
+  details below) and we will attempt to provide them.
 </p>
 
 {% comment %}
@@ -192,8 +191,8 @@ This workshop is organised with the support and in collaboration with
 <b>UCLouvain</b>, <b>VIB Bioinformatics Core</b> and <b>ELIXIR Belgium</b>. <br>
 
 <img height="70" src="./fig/UCLouvain.jpg"> 
-<img height="70" src="https://elixir-europe.org/system/files/elixir-belgium-logo.jpg">
 <img height="70" src="https://corefacilities.vib.be/images/logos/bioinformatics_core_rgb_pos.png">
+<img height="70" src="https://elixir-europe.org/system/files/elixir-belgium-logo.jpg">
 
 </p>
 
@@ -317,79 +316,12 @@ please preview your site before committing, and make sure to run
 </p>
 
 
-
-<div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
-  <h3>Text Editor</h3>
-
-  <p>
-    When you're writing code, it's nice to have a text editor that is
-    optimized for writing code, with features like automatic
-    color-coding of key words. The default text editor on macOS and
-    Linux is usually set to Vim, which is not famous for being
-    intuitive. If you accidentally find yourself stuck in it, hit
-    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd> 
-    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to 
-    return to the shell.
-  </p>
-
-  <div>
-    <ul class="nav nav-tabs nav-justified" role="tablist">
-      <li role="presentation" class="active"><a data-os="windows" href="#editor-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#editor-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
-    </ul>
-
-    <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="editor-windows">
-        <p>
-          nano is a basic editor and the default that instructors use in the workshop.
-          It is installed along with Git.
-        </p>
-        <p>
-          Others editors that you can use are
-          <a href="https://notepad-plus-plus.org/">Notepad++</a> or
-          <a href="https://www.sublimetext.com/">Sublime Text</a>.
-          <strong>Be aware that you must
-            add its installation directory to your system path.</strong>
-          Please ask your instructor to help you do this.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="editor-macos">
-        <p>
-          nano is a basic editor and the default that instructors use in the workshop.
-          See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-          for an example on how to open nano.
-          It should be pre-installed.
-        </p>
-        <p>
-          Others editors that you can use are
-          <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> or
-          <a href="https://www.sublimetext.com/">Sublime Text</a>.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="editor-macos">
-        <p>
-          nano is a basic editor and the default that instructors use in the workshop.
-          It should be pre-installed.
-        </p>
-        <p>
-          Others editors that you can use are
-          <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
-          <a href="https://kate-editor.org/">Kate</a> or
-          <a href="https://www.sublimetext.com/">Sublime Text</a>.
-        </p>
-      </article>
-    </div>
-  </div>
-</div> {% comment %} End of 'editor' section. {% endcomment %}
-
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
-
-  <p>
+	<p>
     <a href="https://www.r-project.org">R</a> is a programming language
     that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
+    statistical analysis. To interact with R and write R code, we use
     <a href="https://www.rstudio.com/">RStudio</a>.
   </p>
 
