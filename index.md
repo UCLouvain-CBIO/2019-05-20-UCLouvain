@@ -186,6 +186,18 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
+<p>
+
+This workshop is organised with the support and in collaboration with
+<b>UCLouvain</b>, <b>VIB Bioinformatics Core</b> and <b>ELIXIR Belgium</b>. <br>
+
+<img height="70" src="./fig/UCLouvain.jpg"> 
+<img height="70" src="https://elixir-europe.org/system/files/elixir-belgium-logo.jpg">
+<img height="70" src="https://corefacilities.vib.be/images/logos/bioinformatics_core_rgb_pos.png">
+
+</p>
+
+
 <hr/>
 
 {% comment %} 
