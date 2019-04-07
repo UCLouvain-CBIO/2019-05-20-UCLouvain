@@ -11,8 +11,8 @@ humandate: "May 20-21 2019"    # human-readable dates for the workshop (e.g., "F
 humantime: "9:00 - 16:30"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2019-05-20      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2019-05-21        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Marco Chiapello", "Laurent Gatto"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Axelle Loriot", "Kevin Missault", "Theo Killian"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Marco Chiapello", "Alexander Botzki", "Laurent Gatto"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Axelle Loriot", "Kevin Missault", "Theo Killian", "Christof De Bo"] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["contact-cbio@uclouvain.be"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://docs.google.com/document/d/1l4GLZXZ3a81WMmHdCbphoHwjvehckbQlPmtjyp2FoCQ/edit?usp=sharing
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
