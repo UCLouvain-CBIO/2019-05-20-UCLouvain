@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "dc"       # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
-                      # Be sure to update the Carpentry type in _config.yml as well.  
+carpentry: "dc"       # what kind of Carpentry (must be either "lc" or "dc" or "swc").
+                      # Be sure to update the Carpentry type in _config.yml as well.
 venue: "UCLouvain"    # brief name of host site without address (e.g., "Euphoric State University")
 address: "Salle centre faculté (niveau -1), Woluwé, Brussels"   # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "be"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
@@ -33,7 +33,7 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
 You specified <code>carpentry: {{page.carpentry}}</code> in <code>index.md</code> and
-<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to 
+<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to
 see the changes take effect locally.
 </div>
 {% endif %}
@@ -134,10 +134,9 @@ This block displays the date and links to Google Calendar.
 <p>
 <b>Registration and payment</b>
 
-The cost of the workshop is 20 euros. To register, please fill out 
-<a href="https://uclouvain.be/en/research/bioinfo/data-carpentry-2019-05-20-21.html">this form</a> 
-and proceed to payment via PayPal.
-</p>
+There are 30 places open at this workshop. The particpation costs are 20 euros. To register, please
+fill out <a href="https://uclouvain.be/en/research/bioinfo/data-carpentry-2019-05-20-21.html">this
+form</a> and proceed to payment via PayPal.  </p>
 
 
 {% comment %}
@@ -215,7 +214,7 @@ Display the contact email address set in the configuration file.
 in collaboration with <b>UCLouvain</b>, <b>VIB Bioinformatics Core</b>
 and <b>ELIXIR Belgium</b>. <br>
 
-<img height="70" src="./fig/UCLouvain.jpg"> 
+<img height="70" src="./fig/UCLouvain.jpg">
 <img height="70" src="https://corefacilities.vib.be/images/logos/bioinformatics_core_rgb_pos.png">
 <img height="70" src="https://elixir-europe.org/system/files/elixir-belgium-logo.jpg">
 
@@ -224,12 +223,12 @@ and <b>ELIXIR Belgium</b>. <br>
 
 <hr/>
 
-{% comment %} 
-SURVEYS - DO NOT EDIT SURVEY LINKS 
+{% comment %}
+SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "swc" %} 
+{% if site.carpentry == "swc" %}
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif site.carpentry == "dc" %}
@@ -343,7 +342,7 @@ please preview your site before committing, and make sure to run
 
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
-	<p>
+  <p>
     <a href="https://www.r-project.org">R</a> is a programming language
     that is especially powerful for data exploration, visualization, and
     statistical analysis. To interact with R and write R code, we use
@@ -366,9 +365,9 @@ please preview your site before committing, and make sure to run
           from <a href="https://cran.r-project.org/index.html">CRAN</a>.
           Also, please install the
           <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-          Note that if you have separate user and admin accounts, you should run the 
-          installers as administrator (right-click on .exe file and select "Run as 
-          administrator" instead of double-clicking). Otherwise problems may occur later, 
+          Note that if you have separate user and admin accounts, you should run the
+          installers as administrator (right-click on .exe file and select "Run as
+          administrator" instead of double-clicking). Otherwise problems may occur later,
           for example when installing R packages.
         </p>
       </article>
