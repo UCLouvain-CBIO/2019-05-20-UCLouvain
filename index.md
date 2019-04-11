@@ -59,6 +59,18 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 
+The goal of this workshop is to initiate wet-lab scientists, such as
+biomedical researchers, to reproducible data analysis with R. The
+*Data organisation in spreadsheets* section will focus on tabular data
+structure and management. We will then introduce *OpenRefine* and how
+it can be used for initial data exploration and cleaning. The biggest
+part of the workshop will focus on R. We will start with a general
+presentation to the RStudio software, a popular interface and editor
+for R, will introduce the basics of R, and then move on to analysing
+data in tabular format, as defined in the first section. We will focus
+on `dplyr` and `ggplot2`, two widely used packages for data
+manipulation and analysis, and data visualisation.
+
 {% comment %}
 INTRODUCTION
 
