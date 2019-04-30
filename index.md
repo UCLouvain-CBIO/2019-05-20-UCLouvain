@@ -134,10 +134,12 @@ This block displays the date and links to Google Calendar.
 <p>
 <b>Registration and payment</b>
 
-The cost of the workshop is 20 euros. To register, please fill out 
-<a href="https://uclouvain.be/en/research/bioinfo/data-carpentry-2019-05-20-21.html">this form</a> 
-and proceed to payment via PayPal.
-</p>
+The workshop is now full.
+
+<!-- The cost of the workshop is 20 euros. To register, please fill out  -->
+<!-- <a href="https://uclouvain.be/en/research/bioinfo/data-carpentry-2019-05-20-21.html">this form</a>  -->
+<!-- and proceed to payment via PayPal. -->
+<!-- </p> -->
 
 
 {% comment %}
