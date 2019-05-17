@@ -251,13 +251,51 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
 
-{% if page.carpentry == "swc" %}
-{% include sc/schedule.html %}
-{% elsif page.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif page.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% endif %}
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr>
+  <td>Before starting</td>
+  <td><a href="{{ site.dc_pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+      </tr>
+      <tr><td>9:00 - 10:30</td> <td> <a href="http://www.datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
+      <tr><td>10:30 - 11:00</td> <td> Coffee break</td></tr>
+      <tr><td>11:00 - 12:30</td><td><a href="http://www.datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td></tr>
+      <tr><td>13:30 - 15:00</td><td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Introduction to R</a></td></tr>
+      <tr><td>15:00 - 15:30</td> <td> Coffee break</td></tr>
+      <tr><td>15:30 - 17:00</td><td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Introduction to R (cont.)</a></td></tr>
+      <tr> <td>Evening</td> <td>END</td> </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+      <tr><td>9:00 - 10:30</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis</a></td></tr>
+      <tr><td>10:30 - 11:00</td> <td> Coffee break</td></tr>
+      <tr><td>11:00 - 12:30</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis</a></td></tr>
+      <tr><td>13:30 - 15:00</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Visualisation</a></td></tr>
+      <tr><td>15:00 - 15:30</td> <td> Coffee break</td></tr>
+      <tr><td>15:30 - 17:00</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Visualisation</a></td></tr>
+      <tr>
+  <td>Evening</td>
+  <td><a href="{{ site.dc_post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
+      </tr>
+      <tr>
+  <td> </td>
+  <td> END </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- {% if page.carpentry == "swc" %} -->
+<!-- {% include sc/schedule.html %} -->
+<!-- {% elsif page.carpentry == "dc" %} -->
+<!-- {% include dc/schedule.html %} -->
+<!-- {% elsif page.carpentry == "lc" %} -->
+<!-- {% include lc/schedule.html %} -->
+<!-- {% endif %} -->
 
 {% comment %}
 Collaborative Notes
