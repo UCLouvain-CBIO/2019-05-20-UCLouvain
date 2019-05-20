@@ -276,7 +276,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
     <table class="table table-striped">
       <tr><td>9:00 - 10:30</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis</a></td></tr>
       <tr><td>10:30 - 11:00</td> <td> Coffee break</td></tr>
-      <tr><td>11:00 - 12:30</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis</a></td></tr>
+      <tr><td>11:00 - 12:30</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Data analysis (cont)</a> and </td> <a href="http://www.datacarpentry.org/R-ecology-lesson/">Visualisation</a></tr>
       <tr><td>13:30 - 15:00</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Visualisation</a></td></tr>
       <tr><td>15:00 - 15:30</td> <td> Coffee break</td></tr>
       <tr><td>15:30 - 17:00</td> <td><a href="https://uclouvain-cbio.github.io/2019-05-20-UCLouvain/suppl-ex.html">Supplementary exercises</a></td></tr>
