@@ -265,6 +265,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
       <tr><td>9:00 - 10:30</td> <td> <a href="http://www.datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
       <tr><td>10:30 - 11:00</td> <td> Coffee break</td></tr>
       <tr><td>11:00 - 12:30</td><td><a href="http://www.datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a> (<a href="https://github.com/vibbits/OpenRefineTrainingData/raw/master/20190520_OpenRefine-Presentation.pdf">slides</a>)</td></tr>
+	  <tr><td>12:30 - 13:30</td> <td>Lunch</td></tr>
       <tr><td>13:30 - 15:00</td><td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Introduction to R</a></td></tr>
       <tr><td>15:00 - 15:30</td> <td> Coffee break</td></tr>
       <tr><td>15:30 - 17:00</td><td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Introduction to R (cont.)</a></td></tr>
@@ -277,6 +278,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
       <tr><td>9:00 - 10:30</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis</a></td></tr>
       <tr><td>10:30 - 11:00</td> <td> Coffee break</td></tr>
       <tr><td>11:00 - 12:30</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Data analysis (cont)</a> and  <a href="http://www.datacarpentry.org/R-ecology-lesson/">Visualisation</a></td></tr>
+	  <tr><td>12:30 - 13:30</td> <td>Lunch</td></tr>
       <tr><td>13:30 - 15:00</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of Visualisation</a></td></tr>
       <tr><td>15:00 - 15:30</td> <td> Coffee break</td></tr>
       <tr><td>15:30 - 17:00</td> <td><a href="https://uclouvain-cbio.github.io/2019-05-20-UCLouvain/suppl-ex.html">Supplementary exercises</a></td></tr>
