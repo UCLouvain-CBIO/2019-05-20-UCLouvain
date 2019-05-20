@@ -2,17 +2,15 @@
 
 ## RNASeq data and annotation
 
-1. Install the `rWSBIM1207` package from the `UCLouvain-CBIO`
-   organisation on github.
 
-2. Import the data from two tab-separated files into R. The full paths
-   to the two files can be accessed with `kem.tsv()`. Read `?kem` for
-   details on the content of the two files. In brief, the
-   `kem_counts.tsv` file contains RNA-Seq expression counts for 13
-   genes and 18 samples and `kem_annot.tsv` contains annotation about
-   each sample. Read the data into two `tibbles` names `kem` and
-   `annot` respectively and familiarise yourself with the content of
-   the two new tables.
+2. Import the data from two tab-separated files into R. The
+   [`kem_counts.tsv`](https://uclouvain-cbio.github.io/2019-05-20-UCLouvain/data/kem_counts.tsv)
+   file contains RNA-Seq expression counts for 13 genes and 18 samples
+   and
+   [`kem_annot.tsv`](https://uclouvain-cbio.github.io/2019-05-20-UCLouvain/data/kem_annot.tsv)
+   contains annotation about each sample. Read the data into two
+   `tibbles` named `kem` and `annot` respectively and familiarise
+   yourself with the content of the two new tables.
    
 3. Convert the counts data into a long table format and annotation
    each sample using the experimental design.
@@ -35,11 +33,10 @@
    
 <details>
 ```{r}
-library("rWSBIM1207")
 library("tidyverse")
-fls <- kem.tsv()
-annot <- read_tsv(fls[1])
-kem <- read_tsv(fls[2]) %>%
+
+annot <- read_tsv("data/kem_annot.tsv")
+kem <- read_tsv("data/kem_counts.tsv") %>%
     gather(key = sample_id, value = expression, -ref) %>%
     left_join(annot)
 k <- kem %>%
