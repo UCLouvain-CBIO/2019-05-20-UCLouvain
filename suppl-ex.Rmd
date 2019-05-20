@@ -67,7 +67,8 @@ kem3 %>%
 
 ## Quantitative proteomics statistical results
 
-1. Load the `prot.csv` file into R.
+1. [Download](https://uclouvain-cbio.github.io/2019-05-20-UCLouvain/data/prot.csv)
+   and load the `prot.csv` file into R.
 
 2. Produce a histogram of
    p-value. [Discuss](http://varianceexplained.org/statistics/interpreting-pvalue-histogram/)
@@ -82,7 +83,7 @@ kem3 %>%
 
 <details>
 ```{r}
-prot <- read_csv("prot.csv")
+prot <- read_csv("./data/prot.csv")
 
 
 ggplot(prot, aes(x = p.value)) +
