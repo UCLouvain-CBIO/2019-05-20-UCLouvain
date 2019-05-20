@@ -1,0 +1,100 @@
+# Data Carpentry - additional R exercises
+
+## RNASeq data and annotation
+
+1. Install the `rWSBIM1207` package from the `UCLouvain-CBIO`
+   organisation on github.
+
+2. Import the data from two tab-separated files into R. The full paths
+   to the two files can be accessed with `kem.tsv()`. Read `?kem` for
+   details on the content of the two files. In brief, the
+   `kem_counts.tsv` file contains RNA-Seq expression counts for 13
+   genes and 18 samples and `kem_annot.tsv` contains annotation about
+   each sample. Read the data into two `tibbles` names `kem` and
+   `annot` respectively and familiarise yourself with the content of
+   the two new tables.
+   
+3. Convert the counts data into a long table format and annotation
+   each sample using the experimental design.
+   
+4. Identity the three transcript identifiers that have the highest
+   expression count over all samples.
+   
+5. Visualise the distribution of the expression for the three
+   transcripts selected above in cell types A and B under both
+   treatments.
+   
+6. For all genes, calculate the mean intensities in each experimental
+   group (as defined by the `cell_type` and `treatment` variables).
+   
+7. Focusing only on the three most expressed transcripts and cell type
+   A, calculate the fold-change induced by the treatment. The
+   fold-change is the ratio between the average expressions in two
+   conditions.
+   
+   
+<details>
+```{r}
+library("rWSBIM1207")
+library("tidyverse")
+fls <- kem.tsv()
+annot <- read_tsv(fls[1])
+kem <- read_tsv(fls[2]) %>%
+    gather(key = sample_id, value = expression, -ref) %>%
+    left_join(annot)
+k <- kem %>%
+    group_by(ref) %>%
+    summarise(tot_exprs = sum(expression)) %>%
+    arrange(desc(tot_exprs)) %>%
+    select(ref) %>%
+    head(3)
+kem3 <- right_join(kem, k)
+ggplot(kem3, aes(x = treatment, y = expression)) +
+    geom_boxplot() +
+    geom_jitter() +
+    facet_grid(ref ~ cell_type)
+kem %>%
+    group_by(ref, cell_type, treatment) %>%
+    summarise(mean_expression = mean(expression))
+kem3 %>%
+    filter(cell_type == "A") %>%
+    group_by(ref, cell_type, treatment) %>%
+    summarise(mean_expression = mean(expression)) %>%
+    spread(key = treatment, value = mean_expression) %>%
+    mutate(fold_change = stimulated/none)
+```
+</details>
+
+## Quantitative proteomics statistical results
+
+1. Load the `prot.csv` file into R.
+
+2. Produce a histogram of
+   p-value. [Discuss](http://varianceexplained.org/statistics/interpreting-pvalue-histogram/)
+   the distribution of these p-values.
+
+3. Produce a *volcano plot*, showing the log2 fold-change along the x
+   axis and -log10 or the adjusted p-value along the y axis. Discuss.
+
+4. Produce an *MA plot*, showing the average intensity (over all
+   samples) along the x axis, and the log2 fold-change along the y
+   axis. Discuss.
+
+<details>
+```{r}
+prot <- read_csv("prot.csv")
+
+
+ggplot(prot, aes(x = p.value)) +
+    geom_histogram()
+
+ggplot(prot, aes(x = LogFC,
+                 y = -log10(adjp))) +
+             geom_point()
+
+ggplot(prot, aes(x = AvgExpr,
+                 y = LogFC)) +
+             geom_point()
+
+```
+</details>
