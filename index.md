@@ -279,7 +279,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
       <tr><td>11:00 - 12:30</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis</a></td></tr>
       <tr><td>13:30 - 15:00</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Visualisation</a></td></tr>
       <tr><td>15:00 - 15:30</td> <td> Coffee break</td></tr>
-      <tr><td>15:30 - 17:00</td> <td><a href="http://www.datacarpentry.org/R-ecology-lesson/">Continuation of R: Visualisation</a></td></tr>
+      <tr><td>15:30 - 17:00</td> <td><a href="https://uclouvain-cbio.github.io/2019-05-20-UCLouvain/suppl-ex.html">Supplementary exercises</a></td></tr>
       <tr>
   <td>Evening</td>
   <td><a href="{{ site.dc_post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
