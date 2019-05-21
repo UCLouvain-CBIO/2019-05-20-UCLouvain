@@ -313,6 +313,15 @@ e.g., '2015-06-10-esu'.
 
 <hr/>
 
+<p> 
+
+The R project of the course is available 
+<a href="https://uclouvain-cbio.github.io/2019-05-20-UCLouvain/data/rintro.zip">here</a>.
+	
+</p>
+
+<hr/>
+
 {% comment %}
 SYLLABUS
 
