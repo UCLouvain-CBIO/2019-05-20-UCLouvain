@@ -72,7 +72,7 @@ kem3 %>%
    the distribution of these p-values.
 
 3. Produce a *volcano plot*, showing the log2 fold-change along the x
-   axis and -log10 or the adjusted p-value along the y axis. Discuss.
+   axis and -log10 of the adjusted p-value along the y axis. Discuss.
 
 4. Produce an *MA plot*, showing the average intensity (over all
    samples) along the x axis, and the log2 fold-change along the y
